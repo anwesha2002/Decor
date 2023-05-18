@@ -1,0 +1,1155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	  <script src="./jquery.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	  <link rel="stylesheet" href="./style.css">
+	  <script src="./javascript.js"></script>
+    <title>interior decoratior</title>
+	  <style>
+		  #bedd, #living, #kitchen1, #bathroom1{
+			  display: none;
+		  }
+	  </style>
+  </head>
+  <body>
+    <div class="wrppper">
+		<div class="container-md-fluid">
+			<div class="row" id="header">
+				<div class="col-md-2 " id="logo">
+					<img src="./logo7.png" title="Logo">
+				</div>
+				
+				<div class="col-md-5 d-flex justify-content-center align-items-center flex-column" id="menu">
+					
+					<div class="col-md-12 d-flex justify-content-center align-items-center" id="header-menu">
+						<div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#home">Home</a></div>
+						<div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#about_us">About Us</a></div>
+						<div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#gallery">Gallery</a></div>
+						<div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#testimonials">Testimonials</a></div>
+						<div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#blog">Blog</a></div>
+						<div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#contact">Contact Us</a></div>
+					</div>
+				</div>
+				<div class="col-md-5 d-flex align-items-center justify-content-around flex-row">
+					<div id="socials" class="col-md-6 d-flex justify-content-center socials">
+						<a href="#" ><i class="fa-brands fa-facebook" title="Facebook"></i></a>
+						<a style="color: #00acee"  href="#"><i class="fa-brands fa-twitter" title="Twitter"></i></a>
+						<a style="color: #bc2a8d" href="#"><i  class="fa-brands fa-instagram" title="Instagram"></i></a>
+						<a style="color: #ea4c89" href="#"><i  class="fa-brands fa-dribbble" title="Dribble"></i></a>
+						
+						
+					</div>
+					<div class="col-md-6  d-flex flex-row" >
+						<input  style="width: 230px; border-radius: 10px" type="search" class="col-md-4 position-absolute">
+						<div  class="col-md-8 d-flex align-items-center position-relative justify-content-end"><i class="fa-solid fa-magnifying-glass align-items-center justify-content-end "></i></div>
+					</div>
+					
+				</div>
+			</div>
+			</div>
+		<div class="container-md-fluid" >
+			<div class="slider" id="home" >
+				<div id="carousel" class="carousel slide" data-bs-ride="carousel" style="z-index: 999999">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" class="dot" onclick="currentslide(1)"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="dot" onclick="currentslide(2)"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="dot" onclick="currentslide(3)"></button>
+					</div>
+				  <div class="carousel-inner position-relative">
+					<div class="carousel-item active">
+					  <video class="img-fluidi hidden-xs hidden-md" loop autoplay muted playsinline style="width:100%">
+						  <source src="./slider-vid3-comp.mp4" type="video/mp4">
+					  </video>
+						
+					</div>
+					<div class="carousel-item">
+					  <video class="img-fluidi hidden-xs hidden-md" loop autoplay muted playsinline style="width:100%">
+						  <source src="./slide-vid4 -comp.mp4" type="video/mp4">
+					  </video>
+					</div>
+					<div class="carousel-it-fluidi hidden-xs hidden-md" loop autoplay muted playsinline style="width:100%">
+						  <source src="./vid6-comp.mp4" type="video/mp4">
+					  </video>
+					</div>
+					  <div class="position-absolute" id="text" >
+						  
+						  
+							  <img src="./text5.jpg">
+							  <img src="./text6.jpg">
+							  <img src="./text7.jpg">
+							  <img src="./text8.jpg">
+							  
+							
+					  </div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+					<span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+					<span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+			</div>
+			</div>
+		<div class="container-md-fluid">
+			<div id="main" class="row ">
+				<a href="#menu"><i class="fa-solid fa-circle-arrow-up" title="top"></i></a>
+				<div id="about_us" class="row">
+					<div class="row d-flex justify-content-center align-items-center"  id="head">
+						<h3 class="d-flex justify-content-center align-items-center">About Us</h3>
+						<h3 class="d-flex justify-content-center align-items-center">About Us</h3>
+					</div>
+					<div id="who_we_are" class="row d-flex justify-content-around align-items-center" >
+						<!--<div class="row">
+							<h4 class="d-flex justify-content-center align-items-center"><span>WHO</span> WE ARE</h4>
+						</div>
+					   <div class="row">
+						<div class="col-md-6 d-flex justify-content-center align-content-center" id="wwr-img">
+							<img src="../../Raw/jpg/img6 (3).jpg" title="About Us">
+						</div>
+						<div class="col-md-6 d-flex justify-content-center align-items-center" id="para1">
+							
+								<p >
+									We start each project from scratch and design solutions that suit your personality, fit the space and create the image you desire.
+								</p>
+							
+						</div>
+					   </div>-->
+						<div class="col-md-6 d-flex justify-content-center align-items-center" id="who-img">
+							<img src="./who-team.webp">
+						</div>
+						<div class="col-md-6" id="para2" >
+							<div class="row d-block">
+								<div id="info-who" class="d-flex flex-row justify-content-around" >
+									<img class="align-self-center" src="./info who.jpg">
+									<h3 class="align-self-center">WHO</h3>
+								</div>
+								<div id="info-para">
+								<h6 class="d-flex justify-content-end align-items-start">Are  <span style="padding-left:16px">we</span></h6>
+								</div>
+							</div>
+							<div class="row" id="para">
+								<p>
+									Decor is a full-service interior design company located in the Seattle area since 1990, specializing in both residential and commercial design.
+									<br><br>
+									We are committed to delivering inspired designs that fulfill client expectations through collaboration and exceptional service. Our goal is always to create designs tailored to our clients’ unique personal styles and practical needs. 
+								</p>
+							</div>
+						</div>
+					</div>
+					 <!--our core value start-->
+					<div id="our_core_value" class="row">
+						<div class="row " id="part1">
+							<div class="col-md-6 d-flex justify-content-end align-items-center">
+								<img src="./value.jpg">
+							</div>
+							<div class="col-md-6 d-flex justify-content-start align-items-center">
+							<h4 class="d-flex justify-content-start align-items-center">OUR CORE<span>VALUE</span> </h4>
+							</div>
+						</div>
+						<div class="row d-flex align-items-start justify-content-around ">
+							<div class="col-md-3 d-flex justify-content-around flex-column align-items-center" id="ocv-main1">
+								<div id="main1-container1" class="row position-relative d-flex justify-content-center align-items-center" >
+									<img src="./img7.jpg">
+									<div id="content" class="row position-absolute d-flex align-items-center justify-content-center flex-column">
+										<h2>WE SERVE EXCELLENCE</h2>
+										
+									</div>
+								</div>
+								<div class="row d-flex align-items-center justify-content-center" id="main1-cont2" >
+									<h6 >Successfully satisfied</p><strong><h5 >2 MILLIONS</h5></strong><p >clients with our work with excellence.</h6>
+								</div>
+							</div>
+							<div class="col-md-3 d-flex justify-content-around flex-column align-items-center" id="ocv-main2" >
+								<div id="main2-container1" class="row position-relative d-flex justify-content-center align-items-center">
+									<img src="./aesthics.jpg">
+									<div id="content" class="row position-absolute d-flex align-items-center justify-content-center flex-column">
+										<h2>WE VALUE AESTHETICS</h2>
+										
+									</div>
+								</div>
+								<div class="row d-flex align-items-center justify-content-around" id="main2-cont2" >
+									<h6 >More than</p> <strong><h5 >3 THOUSAND</h5></strong><p > designers are working to  improve and update aesthetic sense.</h6>
+								</div>
+							</div>
+							<div class="col-md-3 d-flex justify-content-around flex-column align-items-center" id="ocv-main3" >
+								<div id="main3-container1" class="row position-relative d-flex justify-content-center align-items-center">
+									<img src="./customer.jpg">
+									<div id="content" class="row position-absolute d-flex align-items-center justify-content-center flex-column">
+										<h2>CUSTOMER'S CHOICE IS OUR PRIORITY</h2>
+										
+									</div>
+								</div>
+								<div class="row d-flex align-items-center justify-content-around" id="main3-cont3" >
+									<h6 >More than </p><strong><h5 >4 MILLIONS</h5></strong><p >customers got their desired home.</h6>
+								</div>
+							</div>
+							<div class="col-md-3 d-flex justify-content-around flex-column align-items-center"
+							id="ocv-main4" >
+								<div id="main4-container1" class="row position-relative d-flex justify-content-center align-items-center">
+									<img src="./beautiful.jpg">
+									<div id="content" class="row position-absolute d-flex align-items-center justify-content-center flex-column">
+										<h2>WE ADD BEAUTY TO THE HOME</h2>
+										
+									</div>
+								</div>
+								<div class="row d-flex align-items-center justify-content-around" id="main4-cont4" >
+									<h6 >We created more than </p><strong><h5 >4 MILLIONS</h5></strong><p >beautiful home.</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--our core value end-->
+					<br>
+					<br>
+			
+					
+					<div class="row" id="why_choose_us">
+						<div class="row">
+							<h4 class="d-flex justify-content-center align-items-center"><span>WHY </span><span1 style="color:#E9AE83">CHOOSE US</span1></h4>
+						</div>
+						<!--<div class="row" id="wcu">
+							<div class="row" id="excellence">
+								<div class="col-md-6 align-self-center" id="image"><img src="../../Raw/gif/excellence.gif"></div>
+								<div class="col-md-6 align-self-center" id="ex-para"><h3 class="d-flex justify-content-md-start">We serve excellence</h3></div>
+							</div>
+							<div class="row" id="creative">
+								<div class="col-md-6 align-self-center " id="cre-para"><h3 class="d-flex justify-content-md-end">Creativity is our moto</h3></div>
+								<div class="col-md-6 align-self-center"><img src="../../Raw/gif/creative.gif"></div>
+								
+							</div>
+							<div class="row" id="trust">
+								<div class="col-md-6 align-self-center"><img src="../../Raw/gif/trust.gif"></div>
+								<div class="col-md-6  align-self-center" id="tru-para"><h3 class="d-flex justify-content-md-start">We earned peoples' trust over years</h3></div>
+							</div>
+							<div class="row" id="payment">
+								<div class="col-md-6 align-self-center" id="pay-para"><h3 class="d-flex justify-content-md-end">We accept payment after the completion of work</h3></div>
+								<div class="col-md-6 align-self-center"><img src="../../Raw/gif/payment.gif"></div>
+							</div>
+						</div>-->
+						<div class="row" id="part1">
+							<div class="col-md-6">
+								<img src="./why6.jpg">
+								
+							</div>
+							<div class="col-md-6 d-flex justify-content-around flex-column"  id="part1-2">
+								<div class="row " id="payment" >
+									<div class="col-md-2">
+										<img src="./payment.gif">
+									</div>
+									<div class="col-md-10 d-flex justify-content-start align-items-center">
+										<h5 >WE provide 0 <span>&#x20B9;</span> EMI installment sevices</h5>
+									</div>
+								</div>
+								<div class="row " id="creative" >
+									<div class="col-md-2">
+										<img src="./creative.gif">
+									</div>
+									<div class="col-md-10 d-flex justify-content-start align-items-center">
+										<h5 >We provide best solutiion of any interior related problems</h5>
+									</div>
+								</div>
+								<div class="row  " id="trust" >
+									<div class="col-md-2">
+										<img src="./covid.gif">
+									</div>
+									<div  id="trust-para" class="col-md-10 d-flex justify-content-start align-items-center">
+										<h5>We maintain all covid protocols</h5>
+									</div>
+								</div>
+								<div class="row" id="excellence" >
+									<div class="col-md-2">
+										<img src="./creative2.webp">
+									</div>
+									<div class="col-md-10 d-flex justify-content-start align-items-center">
+										<h5>We always come up with all creative ideas</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="row " id="number">
+						
+						
+						<div id="wave" class="d-flex justify-content-center align-content-center position-relative">
+							<span class="position-relative" style="--i:1">A</span>
+							<span class="position-relative" style="--i:2">C</span>
+							<span class="position-relative" style="--i:3">H</span>
+							<span class="position-relative" style="--i:4">I</span>
+							<span class="position-relative" style="--i:5">E</span>
+							<span class="position-relative" style="--i:6">V</span>
+							<span class="position-relative" style="--i:7">E</span>
+							<span class="position-relative" style="--i:8">M</span>
+							<span class="position-relative" style="--i:9">E</span>
+							<span class="position-relative" style="--i:10">N</span>
+							<span class="position-relative" style="--i:11">T</span>
+							<span class="position-relative" style="--i:11">S</span>
+						</div>
+						<div class="col-md-3 ">
+							<h4>Projects</h4>
+							<div id="project" class="d-inline-block ">
+								<span  style="font: 800 40px system-ui">+</span>
+							</div>
+							
+						</div>
+						<div class="col-md-3">
+							<h4>Designer</h4>
+							<div id="designer" class="d-inline-block"><span style="font: 800 40px system-ui">+</span></div>
+							
+						</div>
+						<div class="col-md-3">
+							<h4>Clients</h4>
+							<div id="clients" class="d-inline-block"><span style="font: 800 40px system-ui">+</span></div>
+							
+						</div>
+						<div class="col-md-3">
+							<h4>States</h4>
+							<div id="country"></div>
+						</div>
+						
+					</div>
+					<!--<div class="row" id="our_trusted_partner">
+						<div></div>
+					</div>-->
+					
+					<div class="row" id="gallery">
+						<div class="row d-flex justify-content-center align-items-center" id="head">
+							<h3 class="d-flex justify-content-center align-items-center">Gallery</h3>
+							<h3 class="d-flex justify-content-center align-items-center">Gallery</h3>
+						</div>
+						<div class="row d-flex justify-content-around">
+						<div class="col-md-3 d-flex align-items-center flex-column" >
+							<div class="row d-flex align-items-center flex-column" id="bedroom">
+								<div class="row d-flex justify-content-center position-relative" id="bed-cover">
+									<img style="border-radius: 0 0 0 30%" src="./bed1.jpg" title="Bedroom">
+									<div class="row position-absolute" id="download">
+										<a href="#"><i class="fa-regular fa-circle-down" title="Download"></i></a>
+										<a href="#"><i class="fa-regular fa-heart" title="Like" style="color: red; "></i></a>
+									</div>
+								</div>
+
+							</div>
+							<div class="row d-flex justify-content-center align-items-center" style="width: 300px">
+								<p class="d-flex justify-content-around align-items-center">Bedroom of hotel NOVOTEL in Bangalore decorated by DECOR</p>
+								<div>
+									<i style="color: #F0A675; border: black" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-regular fa-star "></i>
+									<h6 class="d-inline-block">4.0</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 d-flex align-items-center flex-column" >
+						<div class="row d-flex align-items-center flex-column" id="livingroom">
+							<div class="row d-flex justify-content-center position-relative" id="liv-cover">
+								<img style="border-radius: 0 0 0 30%" src="./liv1.jpg" title="Living Room">
+								<div class="row position-absolute" id="download">
+									<a href="#"><i class="fa-regular fa-circle-down" title="Download"></i></a>
+									<a href="#"><i class="fa-regular fa-heart" title="Like" style="color: red; bar"></i></a>
+								</div>
+							</div>
+							<!--<div class="row d-flex justify-content-center" id="livmore">
+								Livingroom
+							</div>-->
+						</div>
+							
+							<div class="row d-flex justify-content-center align-items-center" style="width: 300px">
+								<p class="d-flex justify-content-around align-items-center">Living room of a 3 BHK flat in Kolkata decorated by DECOR</p>
+								<div>
+									<i style="color: #F0A675; border-color: black" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-regular fa-star "></i>
+									<h6 class="d-inline-block">4.5</h6>
+								</div>
+							</div>
+							
+							</div>
+							<div class="col-md-3 d-flex align-items-center flex-column">
+								<div class="row d-flex align-items-center flex-column" id="kitchen">
+									<div class="row d-flex justify-content-center position-relative" id="kit-cover">
+										<img style="border-radius: 0 0 0 30%" src="./kit1.jpg" title="Kitchen">
+										<div class="row position-absolute" id="download">
+											<a href="#"><i class="fa-regular fa-circle-down" title="Download"></i></a>
+											<a href="#"><i class="fa-regular fa-heart" title="Like" style="color: red; bar"></i></a>
+										</div>
+
+									</div>
+									<!--<div class="row d-flex justify-content-center" id="kitmore">
+										Kitchen
+									</div>-->
+								</div>
+								<div class="row d-flex justify-content-center align-items-center" style="width: 300px">
+								<p class="d-flex justify-content-around align-items-center">Kitchen of a 2 BHK flat in Pune decorated by DECOR</p>
+								<div>
+									<i style="color: #F0A675; border-color: black" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-regular fa-star"></i>
+									<i style="color: #F0A675" class="fa-regular fa-star "></i>
+									<h6 class="d-inline-block">4.2</h6>
+								</div>
+							</div>
+						</div>
+							<div class="col-md-3 d-flex align-items-center flex-column">
+								<div class="row d-flex align-items-center flex-column" id="bathrooom">
+									<div class="row d-flex justify-content-center position-relative" id="bath-cover">
+										<img style="border-radius: 0 0 0 30%" src="./bath1.jpg" title="Restroom">
+										<div class="row position-absolute" id="download">
+											<a href="#"><i class="fa-regular fa-circle-down" title="Download"></i></a>
+											<a href="#"><i class="fa-regular fa-heart" title="Like" style="color: red; bar"></i></a>
+										</div>
+									</div>
+									<!--<div class="row d-flex justify-content-center" id="bathmore">
+										Bathroom
+									</div>-->
+								</div>
+								<div class="row d-flex justify-content-center align-items-center" style="width: 300px">
+								<p class="d-flex justify-content-around align-items-center">Restroom room of hotel JW Marriott in Kolkata decorated by DECOR</p>
+								<div>
+									<i style="color: #F0A675; border-color: black" class="fa-solid fa-star "></i>
+									<i style="color:#F0A675" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-solid fa-star "></i>
+									<i style="color: #F0A675" class="fa-regular fa-star "></i>
+									<h6 class="d-inline-block">4.1</h6>
+								</div>
+							</div>
+							</div>
+							</div>
+						
+						<div class="row d-flex align-items-center flex-column" style="width: 100%; margin: 60px; font: 20px 900 average">
+						<div class="row " id="seemore">
+							See More
+						</div>
+						</div>
+						
+					</div>
+					<div class="row" id="bedd" >
+						
+							<!--<div class="row">	-->
+								<div id="head" class="row" style="height: 50px">
+									<h5 class="d-flex justify-content-center align-items-center" style="font-size: : 80px">BEDROOM</h5>
+								</div>
+						    <div class="row "  id="demo">
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="bed1">
+									<div  class="row position-relative d-flex align-items-center justify-content-around" id="bed">
+										<img src="./bed2.webp">
+										<div class="row position-absolute" id="download">
+											<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="bed2">
+									<div class="row position-relative d-flex align-items-center justify-content-around" id="bed">
+										<img src="./bed3.jpg">
+										<div class="row position-absolute" id="download">
+											<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="bed3">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="bed">
+										<img src="./bed4.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="bed4">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="bed">
+										<img src="./bed5.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="bed5">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="bed">
+										<img src="./bed6.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="bed6">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="bed">
+										<img src="./bed7.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						<!--</div>-->
+							</div>
+						
+							<div class="row" id="living">
+								<div id="head" class="row " style="height: 50px">
+									<h5 class="d-flex justify-content-center align-items-center">LIVING ROOM</h5>
+									
+								</div>
+							   <div class="row" id="demo2">
+								<div class="col-md-2 float-md-start d-flex justify-content-start" id="liv1">
+									<div  class="row position-relative d-flex align-items-center justify-content-around" id="liv">
+										<img src="./liv2.jpg">
+										<div class="row position-absolute" id="download">
+											<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="liv2">
+									<div class="row position-relative d-flex align-items-center justify-content-around" id="liv">
+										<img src="./liv3.WEBP">
+										<div class="row position-absolute" id="download">
+											<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="liv3">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="liv">
+										<img src="./liv4.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="liv4">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="liv">
+										<img src="./liv5.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="liv5">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="liv">
+										<img src="./liv6.WEBP">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								   <div class="col-md-2 float-md-start d-flex justify-content-around" id="liv6">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="liv">
+										<img src="./liv7.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+							   </div>
+							</div>
+					
+					
+							<div class="row" id="kitchen1">
+								<div id="head" class="row " style="height: 50px">
+									<h5 class="d-flex justify-content-center align-items-center" >KITCHEN</h5>	
+								</div>
+								<div class="row" id="demo3">
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="kit1">
+									<div  class="row position-relative d-flex align-items-center justify-content-around" id="kit">
+										<img src="./kit2.jpg">
+										<div class="row position-absolute" id="download">
+											<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="kit2">
+									<div class="row position-relative d-flex align-items-center justify-content-around" id="kit">
+										<img src="./kit3.jpg">
+										<div class="row position-absolute" id="download">
+											<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="kit3">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="kit">
+										<img src="./kit4.WEBP">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="kit4">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="kit">
+										<img src="./kit5.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="kit5">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="kit">
+										<img src="./kit6.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="kit6">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="kit">
+										<img src="./ki7.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						
+					
+							<div class="row" id="bathroom1">
+								<div id="head" class="row" style="height: 50px">
+									<h5 class="d-flex justify-content-center align-items-center">BATHROOM</h5>
+									
+								</div>
+							   <div class="row" id="demo4">
+								<div class="col-md-2 float-md-start d-flex justify-content-start" id="bath1">
+									<div  class="row position-relative d-flex align-items-center justify-content-around" id="bath">
+										<img src="./bath2.jpeg">
+										<div class="row position-absolute" id="download">
+											<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="bath2">
+									<div class="row position-relative d-flex align-items-center justify-content-around" id="bath">
+										<img src="./bath3.jpg">
+										<div class="row position-absolute" id="download">
+											<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="bath3">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="bath">
+										<img src="./bath4.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="bath4">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="bath">
+										<img src="./bath5.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 float-md-start d-flex justify-content-around" id="bath5">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="bath">
+										<img src="./bath6.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								   <div class="col-md-2 float-md-start d-flex justify-content-around" id="bath6">
+									<div class="row-position-relative d-flex align-items-center justify-content-around" id="bath">
+										<img src="./liv7.jpg">
+										<div class="row position-absolute" id="download">
+												<a href="#"><i class="fa-regular fa-circle-down"></i></a>
+												<a href="#"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+							   </div>
+							</div>
+					<div class="row" id="testimonials">
+						<div class="row d-flex justify-content-center align-items-center" id="head">
+							<h3 class="d-flex justify-content-center align-items-center">Testimonials</h3>
+							<h3 class="d-flex justify-content-center align-items-center">Testimonials</h3>
+						</div>
+						<div class="row" id="clients-head2">
+							<h5>Listen to our clients</h5>
+							
+						</div>
+						<div class="row" id="client-review">
+							
+								<div class="col-md-4 d-flex justify-content-between align-items-center  flex-column" id="client1">
+									<div class="justify-content-around flex-column">
+										<video controls muted>
+											<source src="./testimonial1.mp4" type="video/mp4" title="vedio">
+										</video>
+									</div>
+									<div id="client1-para" >
+										<i style="font-size: 40px; color:rgba(221,182,81,1.00)" class="fa-solid fa-quote-left"></i>
+										<h6 class="d-flex justify-content-center align-self-center">Without a doubt the best value for money during our office renovation was Decor Interior Design.</h6>
+										<p>——published in Times Of India, 2018</p>
+										<i style="font-size: 40px; color:rgba(221,182,81,1.00)" class="fa-solid fa-quote-right float-end"></i>
+									</div>
+								</div>
+								<div class="col-md-4 d-flex justify-content-between align-items-center  flex-column" id="client2">
+									<div class="justify-content-around flex-column">
+										<video controls muted>
+											<source src="./test4.mp4" type="video/mp4" title="vedio">
+										</video>
+									</div>
+									<div id="client2-para" >
+										<i style="font-size: 40px; color: red" class="fa-solid fa-quote-left"></i>
+										<h6 class=" justify-content-center align-self-center">Wonderful people, from design to project management, all went according to plan and to budget.</h6>
+										<p class="d-flex justify-content-end">——published in NDTV, 2020</p>
+										<i style="font-size: 40px; color: red" class="fa-solid fa-quote-right float-end"></i>
+									</div>
+								</div>
+								<div class="col-md-4 d-flex justify-content-between align-items-center  flex-column" id="client3">
+									<div class="justify-content-around flex-column">
+										<video controls muted>
+											<source src="./test3.mp4" type="video/mp4" title="vedio">
+										</video>
+									</div>
+									<div id="client3-para" >
+										<i style="font-size: 40px; 30px; color:rgba(221,182,81,1.00)" class="fa-solid fa-quote-left"></i>
+										<h6 class=" justify-content-center align-self-center">Decor Interior Design was a pleasure to work with in our 2 most recent Blenz Coffee projects. </h6>
+										<p>——published in Dainik Bhaskar, 2022</p>
+										<i style="font-size: 40px; 30px; color:rgba(221,182,81,1.00)" class="fa-solid fa-quote-right float-end"></i>
+									</div>
+								</div>
+							
+						</div>
+						<div class="row position-relative" style=" margin-top: 100px; height: 650px">
+							<div class="row" style="height: 200px; background-color: #E67B16"></div>
+						<div class="row position-absolute d-flex align-content-around flex-row" id="client-review2">
+							<div class="col-md-4 d-flex justify-content-around" id="client1">
+								<div class="card" id="card-1">
+									<div class="d-flex justify-content-around">
+										<img src="./test4.jpg" title="Client">
+									</div>
+									<div class="card-body ">
+										<div class="card-title">
+											<h3>Anjali Agarwal</h3>
+											<h5>Fashion Designer</h5>
+										</div>
+										<div class="card-text">
+											<p>"Our experience with Decor was pleasurable because of the project managers. The work got done before 45 days just the way we wanted it to be." </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 d-flex justify-content-around" id="client2">
+								<div class="card" id="card-2">
+									<div class="d-flex justify-content-around">
+										<img src="./test2.jpg" title="Client">
+									</div>
+									<div class="card-body ">
+										<div class="card-title">
+											<h3>Anand Prakash</h3>
+											<h5>Entrepreneur</h5>
+										</div>
+										<div class="card-text">
+											<p>"Decor helped keep us on track and provided valuable insight when it came to designing our home called the Nest." </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 d-flex justify-content-around" id="client3">
+								<div class="card" id="card-3">
+									<div class="d-flex justify-content-around">
+										<img src="./test3.jpg" title="Client">
+									</div>
+									<div class="card-body ">
+										<div class="card-title">
+											<h3>Michel Evan</h3>
+											<h5>Engeneeier</h5>
+										</div>
+										<div class="card-text">
+											<p>"Working with Decor was a great experience!  Hatch combined my ideas and vision with their expertise and experience, to come up with a beautifully designed space"</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					
+					</div>
+					<div class="row" id="trusted-partner">
+							<div class="row">
+								<h4 class="d-flex justify-content-center align-items-center">Our Trusted Partner</h4>
+							</div>
+							<div id="partner" class=" d-flex justify-content-center align-items-center">
+        						<img src="./partner1.jpg">
+        						<img src="./partner2.jpg">
+        						<img src="./partner3.png">
+        						<img src="./partner4.png">
+        						<img src="./partner5.jpg">
+        						<img src="./partner6.png">
+        						<img src="./partner7.png">
+        						<img src="./partner8.png">
+        						<img src="./partner9.jpg">
+        						<img src="./partner10.webp">
+     					    </div>
+      						
+						</div>
+					<div id="blog" class="container-fluid row">
+						<div class="row d-flex justify-content-center align-items-center" id="head">
+							<h3 class="d-flex justify-content-center align-items-start">Blogs</h3>
+							<h3 class="d-flex justify-content-center align-items-start">Blogs</h3>
+						</div>
+						<div class="row d-flex align-items-center" id="row1" style="height: 100px">
+							<div class="col-md-4 d-flex justify-content-start" style="padding-left: 50px"><a href="#"><i style="color: black; font-size: 45px" class="fa-brands fa-medium"></i></a></div>
+							<div class="col-md-4 d-flex justify-content-center"><p>Latest Blog Items</p></div>
+							<div class="col-md-4 d-flex justify-content-center">
+								<input type="search" placeholder="Search the key">
+								<div class="d-flex align-self-center"><i class="fa-solid fa-magnifying-glass d-flex justify-content-center align-items-center"></i></div>	   	   
+							</div>		   
+						</div>
+							
+						<div class="row " id="row2" >
+							<div class="col-md-6 d-flex justify-content-center position-relative" id="col1">
+								<div id="card" class="position-relative">
+									<div id="img" class="position-absolute d-flex"><span></span><span></span><span></span><span></span></div>
+									<div id="content" class="d-flex justify-content-center align-items-center flex-column">
+										<h4>Read More</h4>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 d-flex justify-content-around  flex-column" id="col2">
+								<img src="./blog-face.jpg">
+								<p>6 June 2018 . Blog</p>
+								<h3>We create a dream beautiful home</h3>
+								<div id="blog-content" class="d-flex flex-row">
+									<div id="cont1"><h6>Experience</h6>
+										<p>We have been implementing our plans for many years. We have been trusted by more than thousands customers who like to live in thir own home.</p>
+									</div>
+									<div id="cont2"><h6>Knowledge</h6>
+										<p>We are a team of experienced people who applies the most advances projects</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row d-flex align-items-center" id="row3" style="height: 100px">
+							<div class="col-md-6 d-flex justify-content-center flex-row">
+								<a href="#" ><i style="font-size: 20px; padding: 5px" class="fa-brands fa-facebook" title="Facebook"></i></a>
+								<a style="color: #00acee"  href="#"><i style="font-size: 20px; padding: 5px" class="fa-brands fa-twitter" title="Twitter"></i></a>
+								<a style="color: #bc2a8d" href="#"><i style="font-size: 20px; padding: 5px"  class="fa-brands fa-instagram" title="Instagram"></i></a>
+						
+							</div>
+							<div class="col-md-6 d-flex justify-content-end"><p>Send your enquiry<span>&rarr;</p></div>
+							</div>
+						</div>
+					
+					<div class="row" id="contact">
+						<div class="col-md-8" id="col1">
+							<div class="row " >
+								<h3 class="text-center p-10">Contact Us</h3>
+							</div>
+							<div class="row">
+								<div class="col-md-6" style="padding: 50px">
+									<h3>Get in touch</h3>
+									<form  class="p-50">
+										<div class="d-flex flex-row justify-content-between">
+											<label class="d-flex flex-column">First Name <input type="text" placeholder="First Name" style="border-radius: 10px"></label><br>
+											
+											<label class="d-flex flex-column">Last Name <input type="text"  placeholder="Last Name" style="border-radius: 10px"></label><br>
+											
+										</div>
+										<label class="d-flex flex-column">Email <input type="email" placeholder="abcd@gmail.com" style="border-radius: 10px"></label>
+										
+										<label class="d-flex flex-column">Contact no. <input type="text" placeholder="(+91) 34444 64645" style="border-radius: 10px"></label>
+										<label  class="d-flex flex-column">Message <textarea style="border-radius: 10px"></textarea></label>
+										<div class="col-md-12 d-flex justify-content-center" style="padding-top: 10px"><button class="btn btn-primary">Send Message</button></div>
+									</form>
+								</div>
+								<div class="col-md-6">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.893158532913!2d88.4047867148824!3d22.583098985177422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275deba5dd26d%3A0x64fe280f08083695!2sLABONY%20ESTATE!5e0!3m2!1sen!2sin!4v1676836697336!5m2!1sen!2sin" width="400" height="400" style="border:0;" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 d-flex flex-column">
+									<p>Our location</p>
+									<h3>Visit our stores</h3>
+									<p>Find us at these locations</p>
+									<div></div>
+								</div>
+								<div class="col-md-4">
+									<div class="row">
+										<h6>Kolkata</h6>
+										<p>Decor showroom,Newtown,Kolkata </p>
+									</div>
+									<div class="row">
+										<h6>Utter Pradesh</h6>
+										<p>Decor showroom,Kanpur,Utter Pradesh </p>
+									</div>
+									<div class="row">
+										<h6>Delhi</h6>
+										<p>Decor showroom,Trj Pul,Delhi </p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="row">
+										<h6>Chennai</h6>
+										<p>Decor showroom,Anna Nagar,Chennai </p>
+									</div>
+									<div class="row">
+										<h6>Maharastra</h6>
+										<p>Decor showroom,Mumbai, Maharastra </p>
+									</div>
+									<div class="row">
+										<h6>Bangalore</h6>
+										<p>Decor showroom,Bangaluru ,Bangalore  </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 d-flex align-items-center flex-column justify-content-around" id="col2">
+							<div class="row">
+								<div><a href="#"><i class="fa-solid fa-envelope"></i></a></div>
+								<h4>Chat to sell</h4>
+								<p class="d-flex flex-column">
+									Speak to our friendly team
+									<span><a href="#" style="text-decoration: none; color: black">www.decor.com</a></span>
+								</p>
+							</div>
+							<div class="row">
+								<div><a href="#"><i class="fa-solid fa-location-dot"></i></a></div>
+								<h4>Visit us</h4>
+								<p class="d-flex flex-column">
+									<span>Visit our office at Newtown</span>
+									Uniworld City, Downtown Mall,
+										New Town, Kolkata – 700-156,
+										West Bengal
+								</p>
+							</div>
+							<div class="row">
+								<div><a href="#"><i class="fa-solid fa-phone"></i></a></div>
+								<h4>Call us</h4>
+								<p class="d-flex flex-column">
+									<span>Call us any-day from 8 a.m to 10 p.m</span>
+									(+91) 70227 25656 
+								</p>
+							</div>
+							<div class="row">
+								<h3>Start your free trial</h3>
+								<p>Join over 5000+ startups growing over India</p>
+								<button class="btn btn-primary">Get Started</button>
+								<button >Learn More</button>
+							</div>
+						</div>
+						<div><h5 class=text-center>Copyright &#169;2021 | www.decor.com | All rights reserved</h5></div>
+					</div>
+					<!--<div class="row" id="blog">
+						<div class="row d-flex justify-content-center align-items-center" id="head">
+							<h3 class="d-flex justify-content-center align-items-center">Blog</h3>
+							<h3 class="d-flex justify-content-center align-items-center">Blog</h3>
+						</div>
+						<!--<div class="row position-relative">-->
+							<!--<div style="width: 100%" id="image">
+								<img src="../../Raw/Downloaded_images/blogpic.jpg">
+							</div>-->
+							<!--<div class="row position-absolute d-flex justify-content-around align-items-center">-->
+								<!--<div class="row d-flex justify-content-around align-items-center" id="blog1" >
+									<div class="col-md-6 d-flex justify-content-around" id="blog1-img">
+										<img src="../../Raw/jpg/blog1.jpg" title="Blog">
+									</div>
+									<div class="col-md-6 d-flex align-items-center justify-content-around" id="blog-para" >
+										<p>Decor is a forced to be reckoned with to say the least. She’s got the eye! Interior design, fashion, home décor, lifestyle. You name it, Amber Lewis rocks it. This southern California designer lives and breathes interior design and is always sharing what trends she’s loving at the moment on her home decor blog. As seasons change, so do trends!
+										<br>
+										WHAT WE LOVE: Decor is launching a new home design blog soon called “All Sorts Of” and we can’t wait to tune in</p>
+									</div>
+								</div>
+								<div class="row d-flex justify-content-around align-items-center" id="blog2" >
+									<div class="col-md-6 d-flex justify-content-around" id="blog2-img" >
+										<img src="../../Raw/jpg/blog2.jpg" title="Blog">
+									</div>
+									<div class="col-md-6 d-flex align-items-center justify-content-around" id="blog-para2" >
+										<p>Coco of Decor is an executive by day and interior design blogger by night. She began her home décor blog in 2008 and covers all things décor related. Her home design blog became so popular she later started her own Cococozy textiles collection featuring beautiful luxury pillows, throws, bedding, drapery, and rugs.
+										<br>
+										WHAT WE LOVE: Coco was recently named as one of Forbes Magazine’s Inaugural 2017 Top 30 Influencers</p>
+									</div>
+								</div>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<div class="row">
+							<div class="col-md-6"></div>
+							<div class="col-md-6"></div>
+						</div>
+					</div>-->
+					
+					<div class="row" id="blog">
+						<div class="row">
+							<div class="col-md-4">
+								
+							</div>
+							<div class="col-md-4">
+							</div>
+							<div class="col-md-4">
+							</div>
+						</div>
+					</div>
+					<!--<div class="row" id="contact">
+						<div id="wave" class=" d-flex justify-content-center align-content-center position-relative">
+							<span class="position-relative" style="--i:1">C</span>
+							<span class="position-relative" style="--i:2">O</span>
+							<span class="position-relative" style="--i:3">N</span>
+							<span class="position-relative" style="--i:4">T</span>
+							<span class="position-relative" style="--i:5">A</span>
+							<span class="position-relative" style="--i:6">C</span>
+							<span class="position-relative" style="--i:7">T</span>
+							<span class="position-relative" style="--i:8">  </span>
+							<span class="position-relative" style="--i:9">U</span>
+							<span class="position-relative" style="--i:10">S</span>
+							
+						</div>
+						<div class="row">
+							<div class="col-md-4 d-flex justify-content-center">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.893158532913!2d88.4047867148824!3d22.583098985177422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275deba5dd26d%3A0x64fe280f08083695!2sLABONY%20ESTATE!5e0!3m2!1sen!2sin!4v1676836697336!5m2!1sen!2sin" width="400" height="400" style="border:0;" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+							<div class="col-md-4 d-flex justify-content-center align-items-center" id="links">
+								<ul type="none" id="links">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About us</a></li>
+									<li><a href="#"> Gallery </a></li>
+									<li><a href="#">Testimonial</a></li>
+									<li><a href="#"> Contact us</a> </li>
+									<li><a href="#">Others link </a></li>
+								</ul>
+							</div>
+							<div class="col-md-4" id="contact-logo">
+								<form>
+									<label for="name">Name</label>
+									<input type="text" id="name" placeholder="name">
+									<label for="email">Email</label>
+									<input type="text" id="email" placeholder="email">
+								</form>
+								<h5>Decor</h5>
+								<div class="d-flex flex-row" id="socials">
+									<a href="#"><i class="fa-sharp fa-solid fa-location-dot" title="location"></i></a>
+									<p>
+										Uniworld City, Downtown Mall,
+										New Town, Kolkata – 700156,
+										West Bengal
+									</p>
+								</div>
+								<div class="d-flex flex-row" id="socials">
+									<a href="#"><i class="fa-solid fa-phone" title="Phone"></i></a>
+									<p>Phone: +91 7022725656 </p>
+								</div>
+								<div class="d-flex flex-row" id="socials">
+									<a href="#"><i class="fa-sharp fa-solid fa-envelope" title="Email"></i></a>
+									<p>Email : www.decor.com </p>
+								</div>
+								<div id="socials">
+									
+									
+									<a href="#"><i class="fa-brands fa-square-whatsapp" title="Whatsapp"></i></a>
+									<a href="#"><i class="fa-brands fa-instagram" title="Instagram"></i></a>
+									<a href="#"><i class="fa-brands fa-twitter" title="Twitter"></i></a>
+									<a href="#" ><i class="fa-brands fa-facebook" title="Facebook"></i></a>
+									<a href="#" ><i class="fa-brands fa-linkedin" title="Linkedin"></i></a>
+									<a href="#"><i class="fa-brands fa-pinterest" title="Pinterest"></i></a>
+									<a href="#"><i class="fa-brands fa-youtube" title="Youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="row" >
+							<h6 class="d-flex justify-content-center ">@copywright | www.decor.com | 2023</h6>
+						</div>
+					</div>-->
+					<!--<div id="gallery" class="row"> 
+						<div class="row">
+							<h1>GALLERY</h1>
+						</div>
+						<div class="row" id="panel">
+							<div class="col-md-3"><h3>Living Room</h3></div>
+							<div class="col-md-3"><h3>Bedroom</h3></div>
+							<div class="col-md-3"><h3>Kitchem</h3></div>
+							<div class="col-md-3"><h3>Bathroom</h3></div>
+						</div>
+						<div class="row" id="rooms">
+							<div class="row d-flex justify-content-center align-items-center"  id="bed">
+								<div class="row">
+									<div class="col-md-6 position-relative" id="bed1">
+										<img  src="../../Raw/jpg/bed1.jpg">
+										<div class="row position-absolute" id="icons">
+											<a href="#" id="download"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#" id="heart"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+									<div class="col-md-6 row position-relative" id="bed2">
+										<img src="../../Raw/jpg/bed2.webp">
+										<div class="row position-absolute" id="icons">
+											<a href="#" id="download"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#" id="heart"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 position-relative" id="bed3">
+										<img  src="../../Raw/jpg/bed3.jpg">
+										<div class="row position-absolute" id="icons">
+											<a href="#" id="download"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#" id="heart"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+									<div class="col-md-6 row position-relative" id="bed4">
+										<img src="../../Raw/jpg/bed4.jpg">
+										<div class="row position-absolute" id="icons">
+											<a href="#" id="download"><i class="fa-regular fa-circle-down"></i></a>
+											<a href="#" id="heart"><i class="fa-regular fa-heart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>-->
+					<!--<script src="../../execution/js/javascript.js"></script>-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
